@@ -1,0 +1,214 @@
+body {
+    background-color: #2c3e50;
+}
+
+nav {
+    position: relative;
+    float: left;
+    width: 25%;
+}
+
+section {
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    padding: 3px;
+    background: #7070705d;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #fefefe;
+}
+
+.js-weather {
+    position: absolute;
+    right: 3%;
+}
+
+#content {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    display: table;
+}
+
+.weather {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.main_content {
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #fdfdfd;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.clicked {
+    color: #7f8c8d;
+}
+
+.form,
+.greetings {
+    display: none;
+}
+
+.js-greetings {
+    font-size: 2rem;
+    color: #fefefe;
+}
+
+.toDoForm::placeholder {
+    font-size: 1.2rem;
+    color: #eee;
+    font-style: italic;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+}
+
+.toDoForm {
+    height: 30px;
+    width: 50%;
+    padding: .8rem .5rem;
+    border: 0px solid #fff;
+    border-bottom: 1.5px solid #e3e3e3;
+    background: rgba(226, 114, 114, 0);
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.toDoList_showing {
+    width: auto;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+
+.toDoList_container {
+    width: auto;
+    padding: .5rem .8rem;
+}
+
+@keyframes toDoListSlidein {
+    0% {
+        margin-left: 5%;
+        width: 100%;
+        opacity: 0;
+    }
+    10% {
+        margin-left: 4%;
+        width: 100%;
+        opacity: 0.1;
+    }
+    20% {
+        margin-left: 3%;
+        width: 100%;
+        opacity: 0.2;
+    }
+    30% {
+        margin-left: 2%;
+        width: 100%;
+        opacity: 0.3;
+    }
+    40% {
+        margin-left: 1%;
+        width: 100%;
+        opacity: 0.4;
+    }
+    50% {
+        margin-left: 0.8%;
+        width: 100%;
+        opacity: 0.5;
+    }
+    60% {
+        margin-left: 0.6%;
+        width: 100%;
+        opacity: 0.6;
+    }
+    70% {
+        margin-left: 0.4%;
+        width: 100%;
+        opacity: 0.7;
+    }
+    80% {
+        margin-left: 0.2%;
+        width: 100%;
+        opacity: 0.8;
+    }
+    90% {
+        margin-left: 0%;
+        width: 100%;
+        opacity: 0.9;
+    }
+    100% {
+        margin-left: 0%;
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+.js-toDoList {
+    width: 100%;
+    list-style: none;
+    text-align: left;
+    padding: .5rem .5rem;
+    background: rgba(255, 255, 255, 0.3);
+    animation: toDoListSlidein .8s linear;
+}
+
+.js-toDoList li {
+    padding: 0.2rem 0.5rem;
+}
+
+.js-toDoList span {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.js-toDoList button {
+    background: rgba(255, 255, 255, 0.0);
+    border: 0px solid #fff;
+}
+
+.showing {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn .5s linear;
+}
+
+.footer_section {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
